@@ -12,7 +12,7 @@ body{
     position: relative;
     padding: 0px;
     /* background-color:red; */
-    grid-template-rows: 200px,1 fr;
+    grid-template-rows: 20px,1 fr;
     grid-gap: 10px;
     color: rgb(244, 237, 237);
 }
@@ -24,7 +24,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000005c 0%, #00000053 100%), url('/Images/lampara\ y\ libro.png');
+    background-image: linear-gradient(180deg, #0000002a 0%, #0000000d 100%), url('/Images/lampara\ y\ libro.png');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
@@ -33,8 +33,9 @@ body{
 
 .nav-container{
     /* background-color: blueviolet; */
-    /* padding-bottom: 10px; */
+    
     margin: 0%;
+
     /* display: grid; */
     /* grid-template-columns: auto,auto; */
     /* grid-template-rows: auto,auto; */
@@ -50,16 +51,18 @@ body{
 
 .nav-link-menu{
     display: grid;
-    border: solid darkgray;
+    /* border: solid darkgray; */
     grid-template-columns: repeat(12,auto);
-    
+   
     justify-content: right;
-    margin: 2px;
+    padding: 0%;
+   
 
 }
 
 .menu-item{
-    padding: 20px;
+    padding-left: 30px;
+    margin-right: 10px;
     /* font-weight:700; */
     grid-auto-flow: column;
     grid-auto-columns: max-content;
@@ -73,10 +76,17 @@ body{
 
 
 
-/* Nav Menu */
+/*---------------------------- Nav Menu ---------------------------*/
 
 .nav-menu{
     display: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.icono-menu-hamb{
+    display: block;
+    width: 30px;
 }
 
 .nav-close{
@@ -96,4 +106,41 @@ body{
 .nav-titulo{
     font-weight: 300;
     /* font-size:x-large; */
+}
+
+/* --------------------------------Section ------------------*/
+
+.section-container{
+    max-width: 800px;
+    --padding-container: 0;
+    display: inline-grid;
+    grid-auto-rows: max-content;
+    align-content:flex-start;
+    gap: 1em;
+    /* padding-bottom: 100px; */
+    text-align: center;
+}
+
+.titulo-container{
+    font-size: 3rem;
+    margin-left: 270px;
+    padding-top: 5px;
+    margin-top: 0%;
+    
+}
+
+.parrafo-titulo{
+    position: absolute;
+    top: 40%;
+    padding-right: 800px;
+    padding-left: 50px;
+    line-height: 40px;
+    
+}
+
+.fin-titulo{
+    padding-top: 200px;
+    padding-left: 240px;
+    color: black;
+    font-weight: 900;
 }
