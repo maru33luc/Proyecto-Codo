@@ -3,6 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0%;
+    background-color: rgb(200, 200, 210);
 }
 
 .header {
@@ -15,6 +16,7 @@ body {
     grid-template-rows: 20px, 1 fr;
     grid-gap: 10px;
     color: rgb(244, 237, 237);
+    /* background-color: aqua; */
 }
 
 .header::before {
@@ -28,6 +30,7 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
+    
 }
 
 .nav-container {
