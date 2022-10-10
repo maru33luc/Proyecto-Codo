@@ -163,7 +163,7 @@ h1 {
 .ingreso-foto {
     margin: 0%;
     padding: 0%;
-    
+
 }
 
 .ingreso-container {
@@ -188,8 +188,8 @@ h1 {
     opacity: 0;
     transition: 1.5s ease;
     background-color: #14143e49;
-   
-    
+
+
   }
 
 .nuestro-container {
@@ -208,7 +208,7 @@ h1 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    
+
   }
 
   .nuestro-container:hover .nuestrobloque{
@@ -254,13 +254,27 @@ h1 {
         font-size: 2em;
         height:350px;
         margin: 0%;
+      
         /* padding: 10px; */
         /* background: -webkit-linear-gradient(bottom right, rgb(5, 3, 42), rgb(35, 42, 98), rgb(202, 170, 65));  */
         /* background: -webkit-linear-gradient(bottom right, rgb(5, 3, 42), rgb(18, 21, 47), rgb(44, 46, 68)); */
         background-image: url(/Images/fractal-g4bf7ed564_640.jpg);
-        
-        line-height: 70px;  
+
+        line-height: 60px;
         padding-right: 200px;
-        padding-top: 30px;     
+        padding-top: 30px;
         text-align: center;
   }
+
+  .cta {
+    display: inline-block;
+    background-color: #6b9dcc;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 500px;
+}
