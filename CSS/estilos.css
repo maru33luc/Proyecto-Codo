@@ -7,16 +7,17 @@ body {
 }
 
 .header {
-    width: 100%;
+    width: 98%;
     height: 100vh;
     display: grid;
     position: relative;
-    padding: 10px;
+    padding: 13px;
     /* background-color:red; */
     grid-template-rows: 20px, 1 fr;
     grid-gap: 10px;
     color: rgb(244, 237, 237);
     /* background-color: aqua; */
+    margin: 0%;
 }
 
 .header::before {
@@ -30,7 +31,8 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
-    
+    margin: 0%;
+    padding: 0%;
 }
 
 .nav-container {
@@ -171,6 +173,7 @@ h1 {
     grid-template-columns: 50% 50%;
     /* grid-template-columns: 30% 1fr; */
     padding: 0%;
+    margin: 0;
     /* position: relative; */
 }
 
@@ -210,4 +213,54 @@ h1 {
 
   .nuestro-container:hover .nuestrobloque{
     opacity: 1;
+  }
+
+  .diseños-container{
+    display: grid;
+    position: relative;
+    /* grid-template-columns: 400px auto; */
+    grid-template-rows: 200px 1fr;
+    /* background-color:aqua; */
+    /* border: 5px solid  yellow; */
+    width:100%;
+    height: 800px;
+    margin: 0%;
+    padding-top: 60px;
+  }
+
+ .diseño-titulo{
+    padding-top:30px;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color:#000020
+ }
+
+  .diseño-columnas{
+    display: inline-grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+    column-gap: 0px;
+  }
+
+.diseño-video{
+    margin: 0%;
+    padding: 0%;
+}
+
+  .diseño-texto{
+         color: rgb(244, 237, 237);
+        /* background-color: #040413ee; */
+        font-weight: 400;
+        font-size: 2em;
+        height:350px;
+        margin: 0%;
+        /* padding: 10px; */
+        /* background: -webkit-linear-gradient(bottom right, rgb(5, 3, 42), rgb(35, 42, 98), rgb(202, 170, 65));  */
+        /* background: -webkit-linear-gradient(bottom right, rgb(5, 3, 42), rgb(18, 21, 47), rgb(44, 46, 68)); */
+        background-image: url(/Images/fractal-g4bf7ed564_640.jpg);
+        
+        line-height: 70px;  
+        padding-right: 200px;
+        padding-top: 30px;     
+        text-align: center;
   }
