@@ -10,6 +10,8 @@ body {
     background-color: rgb(200, 200, 210);
 }
 
+
+
 .header {
     width: 98%;
     height: 100vh;
@@ -17,7 +19,12 @@ body {
     position: relative;
     padding: 13px;
 
-    /* background-color:red; */
+   
+    min-height: 600px;
+    max-height: 800px;
+    
+    /* grid-template-rows: 100px 1fr; */
+   
 
     grid-template-rows: 60px 1fr 60px;
     grid-gap: 10px;
@@ -26,32 +33,53 @@ body {
     margin: 0%;
 }
 
-.header {
+.header::before {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(180deg, #0000002a 0%, #0000000d 100%), url('/Images/lampara\ y\ libro.png');
     background-size: cover;
+    background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
     margin: 0%;
     padding: 0%;
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+
 }
 
 /*---------------------------- Nav Menu ---------------------------*/
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    
+}
+
+.nav {
+    
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto,auto;
+}
 
 .nav-container {
     margin: 0%;
 }
 
-.nav-link-menu {
+.nav__link {
+    margin-left: auto;
+    padding: 0;
     display: grid;
-    /* border: solid darkgray; */
-    grid-template-columns: repeat(12, auto);
-    margin-bottom: 0%;
-    justify-content: right;
-    padding: 0%;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
+    gap: 2em;
 }
 
 .menu-item {
@@ -61,6 +89,7 @@ body {
     grid-auto-columns: max-content;
     gap: 2em;
     padding-top: 0%;
+    list-style: none;
 }
 
 .nav-menu {
@@ -75,8 +104,11 @@ body {
 }
 
 .nav-close {
-    display: none;
+    display: var(--show, none);
 }
+
+
+
 
 .nav-links {
     text-decoration: none;
@@ -407,6 +439,11 @@ h1 {
 
 
 @media (max-width:800px){
+    
+    .nav-menu{
+        display: block;
+    }
+    
     .nav-link-menu{
         display: block;
    
@@ -424,6 +461,18 @@ h1 {
         opacity: 0;
         pointer-events: none;
         transition: .7s opacity;
+    }
+    .nav-link-menu--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
+    }
+    .nav-close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
     }
 }
 
