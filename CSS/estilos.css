@@ -7,11 +7,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0%;
-    /* background-color: rgb(200, 200, 210); */
     background-color: rgb(233, 235, 235);
 }
-
-
 
 .header {
     width: 100%;
@@ -19,13 +16,9 @@ body {
     display: grid;
     position: relative;
     padding: 1px;
-
-    min-height: 300px;
-    max-height: 1000px;
-    /* grid-template-rows: 60px 1fr 60px; */
+    max-height: 1200px;
     grid-gap: 1px;
     color: rgb(244, 237, 237);
-    /* background-color: aqua; */
     margin: 0%;
 }
 
@@ -39,31 +32,23 @@ body {
     z-index: -1;
     margin: 0%;
     padding: 0%;
-    
-
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-   
-
 }
 
 /*---------------------------- Nav Menu ---------------------------*/
 
 .container {
     width: 90%;
-    /* max-width: 1200px; */
     margin: 0 auto;
-    /* overflow:hidden; */
-    
 }
 
 .nav {
     
     display: grid;
     align-items: center;
-    /* grid-template-rows: auto,auto; */
 }
 
 .nav-container {
@@ -75,8 +60,6 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    /* grid-auto-flow: column; */
-    /* grid-auto-columns: max-content; */
     gap: 2em;
 
 }
@@ -106,16 +89,12 @@ body {
     display: var(--show, none);
 }
 
-
-
-
 .nav-links {
     text-decoration: none;
     color: #fff;
 }
 
 .nav-logo {
-    /* padding-left: 0,5vw; */
     margin-bottom: 0%;
 }
 
@@ -136,11 +115,10 @@ body {
     padding-top: 0%;
     height: 80vh;
     padding: 1%;
-    
 }
 
 .titulo-container {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     padding-bottom: 0%;
     margin-top: 1px;
     margin-bottom: 4%;
@@ -151,36 +129,28 @@ h1 {
     text-align: center;
 }
 
-.section-item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding-bottom: 0%;
-}
-
 .h1-construye {
     padding-left: 10px;
     margin-left: 10px;
     text-align: start;
     line-height: 40px;
-    /* font-size: 2vw; */
 }
 
 .parrafo-titulo {
     padding-top: 1px;
     margin-top: 0%;
     padding-right: 0px;
-    margin-right: 5px;
+    margin-right: 0px;
     line-height: 2.5em;
-    text-align: end;
-    margin-left: 40px;
-    font-size: 2vw;
+    text-align:end;
+    margin-left: 10px;
+    overflow: hidden;
 }
 
 /*------------------------ Main section ---------------------------------------------------*/
 
 .main {
     display: grid;
-    grid-template-rows: 800px 1200px 1fr;
 }
 
 .fin-titulo {
@@ -189,7 +159,6 @@ h1 {
     padding-top: 1px;
     margin-top: 1px;
     line-height: 85px;
-    /* padding-left: 90vh; */
     grid-column-start: 1;
     grid-column-end: 3;
     margin-right: 1px;
@@ -216,12 +185,10 @@ h1 {
 
 .ingreso-container {
     display: grid;
-    grid-template-rows: 300px 350px 500px;
-    grid-template-columns: 50% 50%;
-    
+    grid-template-rows: 300px 30vw 100px;
+    grid-template-columns: 48vw 48vw;
     padding: 0%;
     margin: 0;
-
 }
 
 .nuestrobloque {
@@ -230,7 +197,7 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    /* height:450px; */
+    height:32vw;
     width: 100%;
     opacity: 0;
     transition: 1.5s ease;
@@ -267,15 +234,10 @@ h1 {
 .diseños-container {
     display: grid;
     position: relative;
-    /* grid-template-columns: 400px auto; */
-    grid-template-rows: 500px 1fr;
-    /* background-color:aqua; */
-    /* border: 5px solid  yellow; */
+    grid-template-rows: 300px 1fr;
     width: 100%;
-    /* height: 600px; */
     margin: 0%;
     padding: 0%;
-    /* padding-top: 200px; */
 }
 
 .diseño-titulo {
@@ -285,31 +247,30 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding-top: 150px; */
     line-height: 100px;
-
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .diseño-columnas {
     display: grid;
-    /* position: relative; */
-    grid-template-columns: 50% 50%;
     column-gap: 0px;
-   
-    /* height: 330px; */
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
 }
 
 .diseño-video {
     margin: 0%;
     padding: 0%;
+}
 
+.div-video{
+    width:675px;
 }
 
 .diseño-texto {
     color: rgb(244, 237, 237);
-    /* background-color: #040413ee; */
     font-size: 4vmin;
-    /* font-size: 2em; */
     height: 380px;
     margin: 0%;
     background-image: url(/Images/fractal-g4bf7ed564_640.jpg);
@@ -335,15 +296,9 @@ h1 {
 /*------------------------ Cards section ---------------------------------------------------*/
 
 .container__cards {
-    /* max-width: 1200px; */
-    /* margin: auto; */
     margin-top: 0px;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content:right; */
     justify-items: center;
     justify-content: center;
-    /* align-items: end; */
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 30px;
@@ -351,10 +306,8 @@ h1 {
 
 .card {
     width: 300px;
-    /* margin: 10px; */
     margin: 0px;
     transition: all 300ms;
-
 }
 
 .card:hover {
@@ -449,10 +402,7 @@ h1 {
 
 /*-----------------------Media Query ---------------------------------*/
 
-
-
-
-@media (max-width:800px){
+@media (max-width:900px){
     
     .nav-menu{
         display: block;
@@ -498,49 +448,72 @@ h1 {
     }
 
     .h1-construye {
-        
         font-size: 2.5vw;
     }
     
     .parrafo-titulo {
-       
         font-size: 2.5vw;
     }
 }
 
-@media only screen and (max-width: 768px) {
 
-    /* For mobile phones: */
-    .main {
-        grid-template-rows: 500px 1500px 1fr;
-        justify-content: center;
-    }
-
-   
-
-
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 
     /* For mobile phones: */
     .diseño-columnas {
         grid-template-columns: 100%;
         justify-content: center;
-        
+      
     }
     .div-video{
-        margin: 0px;
-        padding-top: 0px;
-       
+        width: 100%;
     }
+    .diseño-texto{
+        text-align: center;
+        padding-top: 40px;
+        padding-right: 100px;
+        padding-bottom: 30px;
+        margin-top: 0%;
+        height:55vw;
+    }
+    .diseño-video{
+        height: 54vw;
+    }
+   
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px){
+
+    .container__cards{
+    grid-template-columns: auto auto;
+    align-items: center;
+    align-content: center;
+    column-gap: 30px;
+   }
+   .ultima-card{
+   column-gap: 300px;
+   }
+}
+
+
+@media only screen and (max-width: 650px) {
 
     /* For mobile phones: */
     .container__cards {
         grid-template-columns: 100%;
         justify-content: center;
     }
+    .parrafo-titulo{
+        text-align: start;
+       padding-right: 10px;
+      
+       font-size: 1rem;
+    }
+    .h1-construye{
+        font-size: 1rem;
+    }
+    .titulo-container{
+        margin-bottom: 60px;
+    }
+    
 }
