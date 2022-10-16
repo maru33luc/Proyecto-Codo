@@ -7,27 +7,23 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0%;
-    background-color: rgb(200, 200, 210);
+    /* background-color: rgb(200, 200, 210); */
+    background-color: rgb(233, 235, 235);
 }
 
 
 
 .header {
-    width: 98%;
+    width: 100%;
     height: 100vh;
     display: grid;
     position: relative;
-    padding: 13px;
+    padding: 1px;
 
-   
-    min-height: 600px;
-    max-height: 800px;
-    
-    /* grid-template-rows: 100px 1fr; */
-   
-
-    grid-template-rows: 60px 1fr 60px;
-    grid-gap: 10px;
+    min-height: 300px;
+    max-height: 1000px;
+    /* grid-template-rows: 60px 1fr 60px; */
+    grid-gap: 1px;
     color: rgb(244, 237, 237);
     /* background-color: aqua; */
     margin: 0%;
@@ -43,6 +39,7 @@ body {
     z-index: -1;
     margin: 0%;
     padding: 0%;
+    
 
     content: "";
     position: absolute;
@@ -56,9 +53,9 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
-    /* overflow: hidden; */
+    /* overflow:hidden; */
     
 }
 
@@ -66,7 +63,7 @@ body {
     
     display: grid;
     align-items: center;
-    grid-template-rows: auto,auto;
+    /* grid-template-rows: auto,auto; */
 }
 
 .nav-container {
@@ -76,10 +73,12 @@ body {
 .nav__link {
     margin-left: auto;
     padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: max-content; */
     gap: 2em;
+
 }
 
 .menu-item {
@@ -116,7 +115,7 @@ body {
 }
 
 .nav-logo {
-    padding-left: 1em;
+    /* padding-left: 0,5vw; */
     margin-bottom: 0%;
 }
 
@@ -137,13 +136,14 @@ body {
     padding-top: 0%;
     height: 80vh;
     padding: 1%;
-
+    
 }
 
 .titulo-container {
     font-size: 3.5rem;
-    padding-bottom: 20px;
+    padding-bottom: 0%;
     margin-top: 1px;
+    margin-bottom: 4%;
 }
 
 .section-container>div,
@@ -154,41 +154,48 @@ h1 {
 .section-item1 {
     grid-column-start: 1;
     grid-column-end: 3;
+    padding-bottom: 0%;
 }
 
 .h1-construye {
     padding-left: 10px;
     margin-left: 10px;
     text-align: start;
-    /* line-height: 40px; */
+    line-height: 40px;
+    /* font-size: 2vw; */
 }
 
 .parrafo-titulo {
-    padding-top: 18px;
+    padding-top: 1px;
+    margin-top: 0%;
     padding-right: 0px;
     margin-right: 5px;
-    line-height: 40px;
+    line-height: 2.5em;
+    text-align: end;
+    margin-left: 40px;
+    font-size: 2vw;
 }
 
 /*------------------------ Main section ---------------------------------------------------*/
 
 .main {
     display: grid;
-    grid-template-rows: 800px 900px 1fr;
+    grid-template-rows: 800px 1200px 1fr;
 }
 
 .fin-titulo {
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding-top: 1px;
     margin-top: 1px;
+    line-height: 85px;
     /* padding-left: 90vh; */
     grid-column-start: 1;
     grid-column-end: 3;
     margin-right: 1px;
     color: #000020;
     text-align: center;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
 }
@@ -196,9 +203,10 @@ h1 {
 .ingreso-estudiante-foto {
     width: 100%;
     display: block;
+    position: absolute;
     padding: 0%;
     margin: 0%;
-    height: auto;
+    height:auto;
 }
 
 .ingreso-foto {
@@ -210,6 +218,7 @@ h1 {
     display: grid;
     grid-template-rows: 300px 350px 500px;
     grid-template-columns: 50% 50%;
+    
     padding: 0%;
     margin: 0;
 
@@ -232,6 +241,7 @@ h1 {
     position: relative;
     padding: 0%;
     margin: 0%;
+    
 }
 
 .nuestrotexto {
@@ -264,12 +274,13 @@ h1 {
     width: 100%;
     /* height: 600px; */
     margin: 0%;
+    padding: 0%;
     /* padding-top: 200px; */
 }
 
 .diseño-titulo {
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #000020;
     display: flex;
     align-items: center;
@@ -284,6 +295,7 @@ h1 {
     /* position: relative; */
     grid-template-columns: 50% 50%;
     column-gap: 0px;
+   
     /* height: 330px; */
 }
 
@@ -303,7 +315,7 @@ h1 {
     background-image: url(/Images/fractal-g4bf7ed564_640.jpg);
     line-height: 10vmin;
     padding-right: 200px;
-    padding-top: 5px;
+    padding-top: 0px;
     text-align: center;
 }
 
@@ -438,10 +450,20 @@ h1 {
 /*-----------------------Media Query ---------------------------------*/
 
 
+
+
 @media (max-width:800px){
     
     .nav-menu{
         display: block;
+        /* margin-bottom: 180px; */
+    }
+
+    .icono-menu-hamb{
+        /* margin-bottom: 50px; */
+        position: absolute;
+        top: 3%;
+        right: 3%;
     }
     
     .nav-link-menu{
@@ -474,15 +496,29 @@ h1 {
         width: 30px;
         cursor: pointer;
     }
+
+    .h1-construye {
+        
+        font-size: 2.5vw;
+    }
+    
+    .parrafo-titulo {
+       
+        font-size: 2.5vw;
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
     /* For mobile phones: */
     .main {
-        grid-template-rows: 350px 1500px 1fr;
+        grid-template-rows: 500px 1500px 1fr;
         justify-content: center;
     }
+
+   
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -491,7 +527,12 @@ h1 {
     .diseño-columnas {
         grid-template-columns: 100%;
         justify-content: center;
-
+        
+    }
+    .div-video{
+        margin: 0px;
+        padding-top: 0px;
+       
     }
 }
 
