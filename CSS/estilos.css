@@ -260,13 +260,16 @@ h1 {
 .diseño-columnas {
     display: grid;
     column-gap: 0px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49.5vw 50vw;
+    margin-right: 0%;
     overflow: hidden;
+    
 }
 
 .diseño-video {
     margin: 0%;
     padding: 0%;
+
 }
 
 .div-video{
@@ -307,6 +310,7 @@ h1 {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 30px;
+    margin-bottom: 100px;
 }
 
 .card {
@@ -492,7 +496,7 @@ h1 {
 }
 
 .footer__img{
-    width: 30px;
+    width: 50px;
 }
 
 
