@@ -16,3 +16,6 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+
+var frame=docuemnt.getElementById(idframe).contentWindow.document || docuemnt.getElementById(idframe).contentDocument;
+        frame.body.innerHTML='texto en html'
