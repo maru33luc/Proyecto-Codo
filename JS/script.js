@@ -17,3 +17,47 @@ buttons.forEach(button => {
   })
 })
 
+
+function validateForm() {
+  let a= document.forms["myForm"]["fname"].value;
+  let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+  let nombre= /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+  let telefono= /^\d{7,14}$/;
+
+  if (!nombre.test(fname.value)){
+    alert("Formato de nombre no válido");
+    return false;
+  }
+  if (a == "") {
+    alert("Nombre no puede estar vacío");
+    return false;
+  }
+  let b = document.forms["myForm"]["lname"].value;
+  if (b == "") {
+    alert("Apellido no puede estar vacío");
+    return false;
+  }
+  if (!nombre.test(lname.value)){
+    alert("Formato de apellido no válido");
+    return false;
+  }
+  let c = document.forms["myForm"]["email"].value;
+  if (c == "") {
+    alert("Mail no puede estar vacío");
+    return false;}
+  if (!regexEmail.test(email.value)) {
+    alert("Dirección de Mail no válida");
+    return false; 
+  }
+  let d = document.forms["myForm"]["phone"].value;
+  if (d == "") {
+    alert("Teléfono no puede estar vacío");
+    return false;
+  }
+  if (!telefono.test(phone.value)){
+    alert("Número de teléfono no válido ( 7-14 números)");
+    return false;
+  }
+  
+  
+}
