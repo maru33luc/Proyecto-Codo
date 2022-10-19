@@ -17,5 +17,3 @@ buttons.forEach(button => {
   })
 })
 
-var frame=docuemnt.getElementById(idframe).contentWindow.document || docuemnt.getElementById(idframe).contentDocument;
-        frame.body.innerHTML='texto en html'
