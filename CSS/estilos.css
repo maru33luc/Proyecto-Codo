@@ -846,7 +846,16 @@ h1 {
     color: #36A0FF;
 }
 
-  
+/*---------------------Nosotros--------------------*/
+
+.nosotrostexto {
+    color: rgb(78, 78, 78);
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+        
+}  
 
 
 
