@@ -501,6 +501,27 @@ h1 {
 }
 
 
+.ctaEventos {
+    display: inline-block;
+    background-color: #6b9dcc;
+    justify-self: center;
+    margin-left:200px;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.tarjeta{
+    display: inline-flex;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 10px;
+    border: solid 1px white;
+    
+}
+
 
 
 /*-----------------------Media Query ---------------------------------*/
@@ -784,6 +805,32 @@ h1 {
   .carousel-button.next {
     right: 1rem;
   }
+
+
+  .ctaEventos {
+    display: inline-block;
+    background-color: #6b9dcc;
+    justify-self: center;
+    margin-left:200px;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.tarjeta{
+    display: inline-flex;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 10px;
+    /*border: solid 1px white;*/
+    
+}
+
+.contenido{
+    display: flex;
+}
 
 /*---------------------------Formulario de Contacto----------------------------------------*/
 

@@ -58,6 +58,26 @@ function validateForm() {
     alert("Número de teléfono no válido ( 7-14 números)");
     return false;
   }
-  
-  
+    
+}
+
+function traerDatosAPI() {
+  fetch('https://jsonplaceholder.typicode.com/users') // API a leer
+      // Cuando ha finalizado la lectura
+      // guardo en datos el texto leido:
+      .then(datos => datos.json()) //res va a guardar el dato mediante el método .json()
+      .then(datos => {
+          // Y luego copio ese texto en #contenido.
+         /* for(i=0;i<8;i++){*/
+         var myNumeroAleatorio = Math.floor(Math.random()*(9))
+         
+         contenido.innerHTML +=
+              `<div class="tarjeta">
+              
+               Nombre: ${datos[myNumeroAleatorio].name}<br>
+               Email: ${datos[myNumeroAleatorio].email}<br>
+               Ciudad: ${datos[myNumeroAleatorio].address.city}
+               </div>`
+              
+      })
 }
