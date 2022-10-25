@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -11,7 +12,7 @@ body {
 }
 
 .header {
-    width: 99vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     position: relative;
@@ -583,7 +584,7 @@ h1 {
 
 @media only screen and (max-width: 900px) {
 
-    /* For mobile phones: */
+  
     .diseño-columnas {
         grid-template-columns: 100%;
         justify-content: center;
@@ -620,9 +621,9 @@ h1 {
 }
 
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
 
-    /* For mobile phones: */
+  
     .container__cards {
         grid-template-columns: 100%;
         justify-content: center;
@@ -638,6 +639,7 @@ h1 {
     }
     .titulo-container{
         margin-bottom: 60px;
+        font-size: 2.5rem;
     }
     
 }
@@ -671,6 +673,7 @@ h1 {
 
     @media (max-width:600px){
 
+        
         .footer__title{
             justify-self: start;
             margin-bottom: 15px;
@@ -718,7 +721,7 @@ h1 {
     --tipo-principal: Helvetica, Arial, sans-serif;
   }
   
-  /* Las adaptamos al modo oscuro */
+ 
   @media (prefers-color-scheme: dark) {
     :root {
       --negro: #ececec;
